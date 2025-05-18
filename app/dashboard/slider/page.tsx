@@ -155,6 +155,15 @@ export default function SliderDashboard() {
           + إضافة جديد
         </button>
       </div>
+      <div className="mb-4 flex items-center justify-end">
+        <input
+          type="text"
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          placeholder={TEXTS.search}
+          className="border p-2 rounded w-64"
+        />
+      </div>
       <table className="w-full border">
         <thead>
           <tr className="bg-gray-100">

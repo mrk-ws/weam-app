@@ -24,8 +24,13 @@ export const metadata: Metadata = {
 export default async function RootLayout({children,}: 
   Readonly<{children: React.ReactNode;}>) {
   const settingsRaw = await getGeneralSettings();
-  // إزالة _id أو تحويله لنص حتى لا يحدث خطأ في Client Components
-  const { _id, ...settings } = settingsRaw || {};
+  // إصلاح الخطأ: تحقق من وجود _id قبل محاولة فصله
+  let settings: any = settingsRaw || {};
+  if (settings && typeof settings === 'object' && '_id' in settings) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { _id, ...rest } = settings;
+    settings = rest;
+  }
   return (
     <html lang="ar" dir="rtl">
       <body 
