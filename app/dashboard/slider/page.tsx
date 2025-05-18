@@ -1,7 +1,8 @@
 "use client";
-import { useEffect, useRef, useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { SliderItem } from "@/types/slider";
 import toast, { Toaster } from 'react-hot-toast';
+import Image from "next/image";
 
 // نصوص قابلة للتغيير لدعم اللغات
 const TEXTS = {
@@ -25,7 +26,6 @@ export default function SliderDashboard() {
   const [loading, setLoading] = useState(false);
   const [alert, setAlert] = useState<{ type: 'success' | 'error'; message: string } | null>(null);
   const [alertAnchor, setAlertAnchor] = useState<string | null>(null);
-  const fileInputRef = useRef<HTMLInputElement>(null);
   const [search, setSearch] = useState('');
   const [showModal, setShowModal] = useState(false);
   const [deleteId, setDeleteId] = useState<string | null>(null);
@@ -84,17 +84,6 @@ export default function SliderDashboard() {
     setAlertAnchor('submit');
     let imageUrl = form.image || "";
     try {
-      if (fileInputRef.current && fileInputRef.current.files && fileInputRef.current.files[0]) {
-        const file = fileInputRef.current.files[0];
-        const formData = new FormData();
-        formData.append("file", file);
-        const uploadRes = await fetch("/api/upload", {
-          method: "POST",
-          body: formData,
-        });
-        const uploadData = await uploadRes.json();
-        imageUrl = uploadData.url;
-      }
       if (editId) {
         await fetch("/api/slider", {
           method: "PUT",
@@ -111,7 +100,6 @@ export default function SliderDashboard() {
       setForm({});
       setEditId(null);
       setPreview(null);
-      if (fileInputRef.current) fileInputRef.current.value = "";
       fetchSliders();
     } catch (err) {
       toast.error('حدث خطأ أثناء العملية');
@@ -184,7 +172,7 @@ export default function SliderDashboard() {
               <td className="p-2 border">{item.title}</td>
               <td className="p-2 border">
                 {item.image ? (
-                  <img src={item.image} alt="img" className="w-24 h-12 object-cover" />
+                  <Image src={item.image} alt="img" width={96} height={48} className="w-24 h-12 object-cover" />
                 ) : (
                   <span className="text-gray-400">{TEXTS.noImage}</span>
                 )}
@@ -256,12 +244,11 @@ export default function SliderDashboard() {
               <input
                 type="file"
                 accept="image/*"
-                ref={fileInputRef}
                 className="border p-2 rounded w-full"
                 onChange={handleFileChange}
               />
               {(preview || form.image) ? (
-                <img src={preview || form.image!} alt="معاينة الصورة" className="w-32 h-20 object-cover mb-2 mx-auto " />
+                <Image src={preview || form.image!} alt="معاينة الصورة" width={128} height={80} className="w-32 h-20 object-cover mb-2 mx-auto " />
               ) : (
                 <div className="w-32 h-20 flex items-center justify-center bg-gray-100 text-gray-400 border mb-2 mx-auto rounded">{TEXTS.noImage}</div>
               )}
