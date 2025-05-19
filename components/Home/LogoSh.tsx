@@ -1,6 +1,7 @@
 'use client';
 import React from 'react'
 import { motion } from 'framer-motion';
+import Image from "next/image";
 
 const logos = [
   '/images/logo1.png',
@@ -39,10 +40,12 @@ const LogoSh = () => {
             }}
           >
             {[...logos, ...logos].map((logo, index) => (
-              <img
+              <Image
                 key={index}
                 src={logo}
                 alt="logo"
+                width={100}
+                height={64}
                 className="h-16 w-auto"
               />
             ))}

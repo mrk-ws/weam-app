@@ -2,6 +2,7 @@
 import { useEffect, useState, useRef } from "react";
 import { GeneralSettings } from "@/types/settings";
 import toast from "react-hot-toast";
+import Image from "next/image";
 
 // صفحة إعدادات عامة مختصرة: شعار، اسم، وصف، بريد إلكتروني
 
@@ -83,7 +84,13 @@ export default function Page() {
         <div>
           <label className="block font-semibold mb-2">شعار الموقع (صورة)</label>
           <div className="flex items-center gap-4">
-            <img src={logoPreview} alt="شعار الموقع" className="w-20 h-20 rounded shadow border object-contain bg-white" />
+            <Image
+              src={logoPreview}
+              alt="شعار الموقع"
+              width={80}
+              height={80}
+              className="w-20 h-20 rounded shadow border object-contain bg-white"
+            />
             <input
               type="file"
               accept="image/*"
@@ -138,7 +145,13 @@ export default function Page() {
       </form>
       <div className="mt-10 text-center">
         <div className="flex flex-col items-center gap-2">
-          <img src={logoPreview} alt="شعار الموقع" className="w-16 h-16 rounded shadow border object-contain bg-white" />
+          <Image
+            src={logoPreview}
+            alt="شعار الموقع"
+            width={64}
+            height={64}
+            className="w-16 h-16 rounded shadow border object-contain bg-white"
+          />
           <div className="font-bold text-lg">{settings.siteName}</div>
           <div className="text-sm text-gray-500">{settings.siteDescription}</div>
           <div className="text-xs text-gray-400">{settings.email}</div>
