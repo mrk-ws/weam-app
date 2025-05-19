@@ -1,12 +1,18 @@
 "use client";
 import { useEffect, useState } from "react";
 import { FaCog, FaSlidersH, FaFileAlt } from "react-icons/fa";
-import Link from 'next/link';
+
+// عرّف نوع ActivityType بشكل مبسط مؤقتًا
+interface ActivityType {
+  type: string;
+  text: string;
+  date: string;
+}
 
 export default function DashboardPage() {
   const [sliderCount, setSliderCount] = useState(0);
   const [governanceCount, setGovernanceCount] = useState(0);
-  const [activities, setActivities] = useState<any[]>([]);
+  const [activities, setActivities] = useState<ActivityType[]>([]);
 
   useEffect(() => {
     // جلب عدد السلايدر

@@ -1,15 +1,15 @@
 "use client"
 import ThemeToggle from "@/components/global/ThemeMode";
 import { useState, useEffect } from "react";
-import { assets } from "@/assets/assets";
 import Image from "next/image";
 import Link from "next/link";
 import { LuHandCoins } from "react-icons/lu";
 import { IoMenu } from "react-icons/io5";
 import { IoCloseCircle } from "react-icons/io5";
 import { Links } from './data'
+import { GeneralSettings } from "@/types/settings";
 
-const Navbar = ({ settings }: { settings?: any }) => {
+const Navbar = ({ settings }: { settings?: GeneralSettings }) => {
   const [toggleMenu, setToggleMenu] = useState(true);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);

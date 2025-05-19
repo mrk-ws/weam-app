@@ -1,6 +1,5 @@
 "use client"
 import { useEffect, useState, useRef } from "react";
-import { GeneralSettings } from "@/types/settings";
 import toast from "react-hot-toast";
 import Image from "next/image";
 

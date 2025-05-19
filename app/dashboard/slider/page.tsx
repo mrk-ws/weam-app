@@ -82,7 +82,7 @@ export default function SliderDashboard() {
     setLoading(true);
     setAlert(null);
     setAlertAnchor('submit');
-    let imageUrl = form.image || "";
+    const imageUrl = form.image || "";
     try {
       if (editId) {
         await fetch("/api/slider", {
@@ -101,7 +101,7 @@ export default function SliderDashboard() {
       setEditId(null);
       setPreview(null);
       fetchSliders();
-    } catch (err) {
+    } catch {
       toast.error('حدث خطأ أثناء العملية');
     } finally {
       setLoading(false);
@@ -119,7 +119,7 @@ export default function SliderDashboard() {
       });
       toast.success('تم حذف السلايدر بنجاح');
       fetchSliders();
-    } catch (err) {
+    } catch {
       toast.error('حدث خطأ أثناء الحذف');
     } finally {
       setLoading(false);

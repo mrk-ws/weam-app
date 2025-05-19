@@ -6,7 +6,7 @@ import { SliderItem } from "@/types/slider";
 const HeroSlider = () => {
   const [slides, setSlides] = useState<SliderItem[]>([]);
   const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [settings, setSettings] = useState<any>(null);
+  const [settings, setSettings] = useState<{ siteTitle?: string } | null>(null);
 
   // جلب بيانات السلايدر من API
   useEffect(() => {

@@ -1,8 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
-import { LuHandCoins } from "react-icons/lu";
-import { MdOutlineVolunteerActivism } from "react-icons/md";
 import { BsFillSendFill } from "react-icons/bs";
 
 

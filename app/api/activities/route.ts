@@ -12,7 +12,7 @@ export async function GET() {
       .limit(10)
       .toArray();
     return NextResponse.json(activities);
-  } catch (e) {
+  } catch {
     return NextResponse.json([]);
   }
 }

@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { GeneralSettings } from "@/types/settings";
 
 interface HeaderProps {
-  settings?: any;
+  settings?: GeneralSettings;
 }
 
 const Header = ({ settings }: HeaderProps) => {

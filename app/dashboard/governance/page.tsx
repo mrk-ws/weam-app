@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 
 interface GovernanceItem {
@@ -110,7 +110,7 @@ export default function GovernanceDashboard() {
       setForm({});
       setEditId(null);
       fetchItems();
-    } catch (err) {
+    } catch {
       toast.error('حدث خطأ أثناء العملية');
     } finally {
       setLoading(false);
@@ -128,7 +128,7 @@ export default function GovernanceDashboard() {
       });
       toast.success('تم حذف الملف بنجاح');
       fetchItems();
-    } catch (err) {
+    } catch {
       toast.error('حدث خطأ أثناء الحذف');
     } finally {
       setLoading(false);
