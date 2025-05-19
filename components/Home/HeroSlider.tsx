@@ -54,11 +54,6 @@ const HeroSlider = () => {
     return <div className="w-full h-[400px] flex items-center justify-center">لا توجد شرائح للعرض حالياً</div>;
   }
 
-  // دالة fallback للصورة
-  const handleImgError = (e: React.SyntheticEvent<HTMLDivElement, Event>) => {
-    (e.target as HTMLDivElement).style.backgroundImage = 'url(/images/slide1.jpg)';
-  };
-
   return (
     <div className="relative w-full h-screen overflow-hidden mt-28 md:mt-14">
       <div className="absolute top-0 left-0 w-full h-full  bg-opacity-50"></div>
@@ -68,7 +63,6 @@ const HeroSlider = () => {
           <div
             className="w-[350px] md:w-[550px] h-[400px] mx-auto bg-cover bg-center transition-all duration-700 rounded-3xl"
             style={{ backgroundImage: `url(${getImageUrl(slides[currentIndex].image)})` }}
-            onError={handleImgError as any}
           >
             {!slides[currentIndex].image && (
               <div className="text-red-600 text-center mt-10">لم يتم تحميل الصورة بشكل صحيح</div>

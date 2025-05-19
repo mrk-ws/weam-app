@@ -24,7 +24,6 @@ const Navbar = ({ settings }: { settings?: GeneralSettings }) => {
       setSiteTitle("");
       setLogoUrl("/logo-hed.png");
     }
-    // eslint-disable-next-line
   }, [settings]);
 
   useEffect(() => {

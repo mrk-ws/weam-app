@@ -5,6 +5,7 @@ import Header from "@/components/HeaderFooter/header";
 import Footer from "@/components/HeaderFooter/footer/Footer";
 import BackToTop from "@/components/global/BackToTop";
 import { getGeneralSettings } from "@/utils/settings";
+import { GeneralSettings } from "@/types/settings";
 
 const tajawal = Tajawal({
   weight: ['200', '300', '400', '500', '700', '800', '900'],
@@ -25,11 +26,11 @@ export default async function RootLayout({children,}:
   Readonly<{children: React.ReactNode;}>) {
   const settingsRaw = await getGeneralSettings();
   // إصلاح الخطأ: تحقق من وجود _id قبل محاولة فصله
-  let settings: any = settingsRaw || {};
+  let settings: GeneralSettings = (settingsRaw || {}) as GeneralSettings;
   if (settings && typeof settings === 'object' && '_id' in settings) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const { _id, ...rest } = settings;
-    settings = rest;
+    const { _id, ...rest } = settings as Record<string, unknown>;
+    settings = rest as GeneralSettings;
   }
   return (
     <html lang="ar" dir="rtl">
