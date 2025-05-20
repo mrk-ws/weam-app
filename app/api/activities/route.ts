@@ -15,7 +15,8 @@ export async function GET() {
       .limit(10)
       .toArray();
     return NextResponse.json(activities);
-  } catch {
-    return NextResponse.json([]);
+  } catch (e) {
+    // إرجاع رسالة خطأ واضحة مع كود الحالة 500
+    return NextResponse.json({ error: e instanceof Error ? e.message : 'Unknown error' }, { status: 500 });
   }
 }
