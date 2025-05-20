@@ -1,3 +1,6 @@
+// Force this API route to be dynamic and not statically generated
+export const dynamic = "force-dynamic";
+
 import { NextRequest, NextResponse } from 'next/server';
 import clientPromise from '@/utils/db';
 import { MongoClient, Db, ObjectId } from 'mongodb';
