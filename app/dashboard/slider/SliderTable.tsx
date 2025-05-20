@@ -49,7 +49,7 @@ export default function SliderTable({
             <td className="p-2 border">{item.title}</td>
             <td className="p-2 border">
               {item.image ? (
-                <Image src={item.image} alt="img" width={96} height={48} className="w-24 h-12 object-cover" />
+                <Image src={item.image && item.image.startsWith('/') ? item.image : '/images/slide1.jpg'} alt="img" width={96} height={48} className="w-24 h-12 object-cover" />
               ) : (
                 <span className="text-gray-400">{TEXTS.noImage}</span>
               )}
