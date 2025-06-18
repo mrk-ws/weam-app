@@ -4,29 +4,14 @@ import { motion } from 'framer-motion';
 import Image from "next/image";
 
 const logos = [
-  '/images/logo1.png',
+  '/images/logo4.jpg',
   '/images/logo2.png',
-  '/images/logo3.svg',
-  '/images/logo4.svg',
-  '/images/logo5.png',
-  '/images/logo6.jfif',
-  '/images/logo7.svg',
-  '/images/logo8.svg',
+  '/images/logo3.svg'
 ];
 
 const LogoSh = () => {
   return (
     <section className='py-20 w-full'>
-      {/* <div className='flex w-full justify-between'>
-        <Image src={'/images/logo1.png'} alt='logo' height={100} width={100}/>
-        <Image src={'/images/logo2.png'} alt='logo' height={100} width={100}/>
-        <Image src={'/images/logo3.svg'} alt='logo' height={100} width={100}/>
-        <Image src={'/images/logo4.svg'} alt='logo' height={100} width={100}/>
-        <Image src={'/images/logo5.png'} alt='logo' height={100} width={100}/>
-        <Image src={'/images/logo6.jfif'} alt='logo' height={100} width={100}/>
-        <Image src={'/images/logo7.svg'} alt='logo' height={100} width={100}/>
-        <Image src={'/images/logo8.svg'} alt='logo' height={100} width={100}/>
-      </div> */}
       <div className="overflow-hidden py-6">
         <div className="relative flex whitespace-nowrap">
           <motion.div

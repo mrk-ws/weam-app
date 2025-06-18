@@ -5,10 +5,10 @@ import { RiHotelLine, RiBarChartBoxLine, RiHandHeartLine, RiUserStarLine } from 
 import type { ReactElement } from 'react';
 
 const stats = [
-	{ icon: <RiHotelLine size={60} />, target: 350, label: 'المشاريع' },
-	{ icon: <RiBarChartBoxLine size={60} />, target: 206, label: 'البرامج' },
-	{ icon: <RiHandHeartLine size={60} />, target: 295, label: 'المتطوعين' },
-	{ icon: <RiUserStarLine size={60} />, target: 653, label: 'المستفيدين' },
+	{ icon: <RiHotelLine size={60} />, target: 15, label: 'المشاريع' },
+	{ icon: <RiBarChartBoxLine size={60} />, target: 15, label: 'البرامج' },
+	{ icon: <RiHandHeartLine size={60} />, target: 0, label: 'المتطوعين' },
+	{ icon: <RiUserStarLine size={60} />, target: 0, label: 'المستفيدين' },
 ];
 
 const CounterBox = ({ icon, target, label }: { icon: ReactElement; target: number; label: string }) => {
