@@ -1,12 +1,17 @@
-
-"use client"
+"use client";
 
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaShareAlt } from "react-icons/fa";
+import { LuHandCoins } from "react-icons/lu";
 
-const  Program1 = () => {
-  const shareUrl = typeof window !== "undefined" ? window.location.href : "";
+const Program1 = () => {
+  const [shareUrl, setShareUrl] = useState("");
+
+  useEffect(() => {
+    setShareUrl(window.location.href);
+  }, []);
 
   const handleShare = (platform: string) => {
     let url = "";
@@ -44,7 +49,8 @@ const  Program1 = () => {
       {/* Program Details */}
       <h1 className="text-3xl font-bold mt-4">برنامج دعم الأيتام</h1>
       <p className="text-gray-600 dark:text-gray-200 mt-2">
-        يهدف البرنامج إلى تقديم الدعم المادي والمعنوي للأطفال الأيتام من خلال توفير بيئة تعليمية وصحية مناسبة.
+        يهدف البرنامج إلى تقديم الدعم المادي والمعنوي للأطفال الأيتام من خلال
+        توفير بيئة تعليمية وصحية مناسبة.
       </p>
 
       {/* Goals */}
@@ -57,7 +63,9 @@ const  Program1 = () => {
 
       {/* Target Audience */}
       <h2 className="text-2xl font-semibold mt-4">المستفيدون المستهدفون</h2>
-      <p className="text-gray-700 dark:text-gray-200">الأطفال الأيتام من الفئات الأكثر احتياجًا في المجتمع.</p>
+      <p className="text-gray-700 dark:text-gray-200">
+        الأطفال الأيتام من الفئات الأكثر احتياجًا في المجتمع.
+      </p>
 
       {/* Expected Impact */}
       <h2 className="text-2xl font-semibold mt-4">الأثر المتوقع</h2>
@@ -74,13 +82,37 @@ const  Program1 = () => {
       </ul>
 
       {/* Share Section */}
+      <Link
+        href={"https://store.weam.org.sa/"}
+        target="blank"
+        className="rounded-lg relative w-40 h-10 cursor-pointer flex items-center border border-primaryColor bg-primaryColor group hover:bg-primaryColor active:bg-primaryColor active:border-primaryColor overflow-hidden mx-auto"
+      >
+        <span className="text-gray-200 font-semibold mr-12 transform group-hover:translate-x-20 transition-all duration-300">
+          إدعم البرنامج
+        </span>
+        <span className="absolute text-gray-200 right-0 h-full w-10 rounded-lg bg-primaryColor flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-all duration-300">
+          <LuHandCoins size={25} />
+        </span>
+      </Link>
       <div className="flex items-center justify-between mt-6">
-        <p className="text-lg font-semibold">مشاركة البرنامج:</p>
-        <div className="flex space-x-3">
-          <FaFacebook className="text-blue-600 cursor-pointer text-xl" onClick={() => handleShare("facebook")} />
-          <FaTwitter className="text-blue-400 cursor-pointer text-xl" onClick={() => handleShare("twitter")} />
-          <FaLinkedin className="text-blue-700 cursor-pointer text-xl" onClick={() => handleShare("linkedin")} />
-          <FaShareAlt className="text-gray-600 cursor-pointer text-xl" onClick={() => handleShare("copy")} />
+        <p className="text-lg font-semibold">شارك البرنامج:</p>
+        <div className="flex gap-3">
+          <FaFacebook
+            className="text-blue-600 cursor-pointer text-xl"
+            onClick={() => handleShare("facebook")}
+          />
+          <FaTwitter
+            className="text-blue-400 cursor-pointer text-xl"
+            onClick={() => handleShare("twitter")}
+          />
+          <FaLinkedin
+            className="text-blue-700 cursor-pointer text-xl"
+            onClick={() => handleShare("linkedin")}
+          />
+          <FaShareAlt
+            className="text-gray-600 cursor-pointer text-xl"
+            onClick={() => handleShare("copy")}
+          />
         </div>
       </div>
     </div>

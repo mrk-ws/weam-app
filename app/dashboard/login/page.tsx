@@ -7,7 +7,6 @@ export default function DashboardLogin() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // كلمة المرور من متغير البيئة (يجب ضبطها في .env.local)
     const correctPassword = process.env.NEXT_PUBLIC_DASHBOARD_PASSWORD || "admin123";
     if (password === correctPassword) {
       localStorage.setItem("dashboard_auth", "1");

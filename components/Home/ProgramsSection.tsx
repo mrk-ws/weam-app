@@ -21,91 +21,91 @@ const programs = [
     badge: "جدارة وتفوق",
     title:
       "رفع المستوى الاكاديمي للأيتام وتأهيلهم للتفوق في الاختبارات التحصيلية والقدرات من خلال توفير دروس تقوية.",
-    link: "/programs/program2",
+    link: "/programs/program1",
   },
   {
     image: "/images/slide3.jpg",
     badge: "إسهام",
     title:
       "تمكين الأيتام وتأهيلهم ليكونوا قادة المستقبل من خلال برامج تدريبية وتنموية متخصصة مع الجهات ذات العلاقة.",
-    link: "/programs/program3",
+    link: "/programs/program1",
   },
   {
     image: "/images/slide4.jpg",
     badge: "رفاق",
     title:
       "تمكين الأيتام وتطوير شخصياتهم من خلال الإنخراط في برامج تربوية ونوادي تطوعية.",
-    link: "/programs/program4",
+    link: "/programs/program1",
   },
   {
     image: "/images/p1.jpg",
     badge: "مطمئن",
     title:
       "دعم الأيتام وأسرهم نفسياً واجتماعياً من خلال توفير جلسات إرشاد نفسي وأسري وورش توعية.",
-    link: "/programs/program5",
+    link: "/programs/program1",
   },
   {
     image: "/images/p7.jpg",
     badge: "واعي",
     title:
       "دمج الأيتام في المجتمع وتوسيع دائرة علاقاتهم من خلال تنفيذ برامج توعوية و اجتماعية متنوعة",
-    link: "/programs/program5",
+    link: "/programs/program1",
   },
   {
     image: "/images/p12.jpg",
     badge: "الحج والعمرة",
     title:
       "تمكين الأيتام المكلفين من اداء فريضة الحج والعمرة بالشراكة مع جهات ذات العلاقة",
-    link: "/programs/program5",
+    link: "/programs/program1",
   },
   {
     image: "/images/p8.jpg",
     badge: "مؤهل",
     title:
       "دعم الأيتام المتفوقين اكاديمياً وتمكينهم في مواصلة دراساتهم العليا من خلال تقديم برامج دراسية شاملة بالشراكة مع الجهات ذات العلاقة",
-    link: "/programs/program5",
+    link: "/programs/program1",
   },
   {
     image: "/images/p6.jpg",
     badge: "ترفية",
     title:
       "بناء مجتمع مترابط من خلال تنظيم انشطة ترفيهية وثقافية اجتماعية للأيتام واسرهم وتعزيز شعورهم بالانتماء والمشاركة ",
-    link: "/programs/program5",
+    link: "/programs/program1",
   },
   {
     image: "/images/p3.jpg",
     badge: "قارئ",
     title:
       "تنمية الجانب الثقافي والمعرفي لدى الأيتاممن خلال توفير بيئة محفزة للقراءة والمعرفة وتشجيعهم على الانخراط في الانشطة الثقافية والعلمية ",
-    link: "/programs/program5",
+    link: "/programs/program1",
   },
   {
     image: "/images/p11.jpg",
     badge: "تطوع",
     title:
       "اشراك الايتام في العمل التطوعي وتعزيز قيم العطاء والمشاركة المجتمعية من خلال تنظيم برامج تطوعية متنوعة",
-    link: "/programs/program5",
+    link: "/programs/program1",
   },
   {
     image: "/images/p4.jpg",
     badge: "ريادة",
     title:
       "تمكين الأيتام اقتصاديا من خلال توفير الدعد والتدريب اللازمين لبدء مشاريعهم الخاصة مع التركيز على تطوير مهاراتهم الرياديةعزيز ثقتهم بأنفسهم",
-    link: "/programs/program5",
+    link: "/programs/program1",
   },
   {
     image: "/images/p10.jpg",
     badge: "نادي",
     title:
       "توفير بيئة آمنة وممتعة للأيتام لاستغلال اوقات فراغهم في انشطة رياضية وتعليمية وترفيهية تساهم في تطوير شخصياتهم ومهاراتهم",
-    link: "/programs/program5",
+    link: "/programs/program1",
   },
   {
     image: "/images/p5.jpg",
     badge: "مهارة",
     title:
       "مساعدة الأيتام على تحديد ميولهم المهني وتحديد مسارهم المستقبلي من خلال تقييمات مهنية متخصصة وتوجيههم نحو الفرص المناسبة وتقديم الاستشارات الفردية",
-    link: "/programs/program5",
+    link: "/programs/program1",
   },
 ];
 
