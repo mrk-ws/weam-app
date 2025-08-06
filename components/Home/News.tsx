@@ -27,7 +27,7 @@ const newsData: NewsItem[] = [
     id: 3,
     title: "الحفل السنوي لتنمية وتمكين ايتام المملكة",
     description: "شاركت الجمعية في محافظة حفر الباطن اللقاء السنوي  لجمعية تراؤوف...",
-    image: "/images/news3.jpg",
+    image: "https://jeeltoday.com/wp-content/uploads/2025/02/058e7314-160e-446f-a17d-b998e3bf6c0a-780x470.jpeg",
     link: "#",
   },
   {
