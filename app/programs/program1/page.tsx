@@ -94,7 +94,7 @@ const Program1 = () => {
       <Link
         href={"https://store.weam.org.sa/p/103530"}
         target="blank"
-        className="rounded-lg relative w-40 h-10 cursor-pointer flex items-center border border-primaryColor bg-primaryColor group hover:bg-primaryColor active:bg-primaryColor active:border-primaryColor overflow-hidden my-4 md:my-2 mx-auto"
+        className="rounded-lg relative w-40 h-10 cursor-pointer flex items-center border border-primaryColor bg-primaryColor group hover:bg-primaryColor active:bg-primaryColor active:border-primaryColor overflow-hidden mx-auto"
       >
         <span className="text-gray-200 font-semibold mr-12 transform group-hover:translate-x-20 transition-all duration-300">
           إدعم البرنامج
