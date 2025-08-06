@@ -34,7 +34,7 @@ const  Program1 = () => {
     <div className="max-w-4xl mx-auto p-6 bg-slate-100 dark:bg-darkTheme2 shadow-lg rounded-lg mt-28">
       {/* Program Image */}
       <Image
-        src="/images/slide1.jpg"
+        src="/images/p2.png"
         alt="Charity Program"
         width={1000}
         height={1000}

@@ -38,7 +38,9 @@ const Volunteer = () => {
 
   </span>
 </Link>
-<button
+<Link
+  href={'https://nvg.gov.sa/public/ent-prov/detail/e2aa4a75-1a3c-41ef-3a9a-08dcd097aea5'} 
+  target="blank"
   className="rounded-lg relative w-28 h-10 cursor-pointer flex items-center border border-primaryColor group hover:bg-primaryColor active:bg-primaryColor active:border-primaryColor overflow-hidden"
 >
   <span
@@ -49,7 +51,7 @@ const Volunteer = () => {
                             <MdOutlineVolunteerActivism size={25} />
 
   </span>
-</button>
+</Link>
 
             </div>
         </div >

@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
-import { BsFillSendFill } from "react-icons/bs";
+import { MdOutlineVolunteerActivism } from "react-icons/md";
 
 
 
@@ -15,20 +16,22 @@ const Volunteer2 = () => {
           <p className='mt-1 md:w-2/3 text-justify text-lg text-textColor p-2'>التطوع في مجال التنمية البشرية هو تجربة ثرية ومجزية، وتساعدك على تطوير ذاتك واكتساب مهارات جديدة. إذا كنت تبحث عن طريقة لإحداث فرق في العالم، فالتطوع في مجال التنمية البشرية هو خيار رائع.</p>
           <div className='flex gap-2 mt-6 w-full md:w-1/2'>
 
-            <form className='flex flex-col gap-2 w-full '>
-              <input className='rounded-md px-2  text-primaryColor' type="text" name="" placeholder='الاسم' id="" />
-              <input className='rounded-md px-2  text-primaryColor' type="email" name="" placeholder='الايميل' id="" />
-              <input className='rounded-md px-2  text-primaryColor' type="text" name="" placeholder='المجال التطوعي' id="" />
-              <button className="rounded-md p-1 relative cursor-pointer flex items-center justify-center border border-primaryColor bg-primaryColor group hover:bg-primaryColor active:bg-primaryColor active:border-primaryColor overflow-hidden">
-                <span className="text-sm text-gray-200 font-semibold mr-10 md:mr-14 transform group-hover:translate-x-20 transition-all duration-300 ">
-                  ارسل
-                </span>
-                <span className="absolute text-gray-200 -right-8 h-full w-10 rounded-lg bg-primaryColor flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-all duration-300">
-                  <BsFillSendFill size={15}/>
-                </span>
-              </button>
-            </form>
-
+            <Link
+              href={'https://nvg.gov.sa/public/ent-prov/detail/e2aa4a75-1a3c-41ef-3a9a-08dcd097aea5'} 
+              target="blank"
+              className="rounded-lg relative w-full h-10 cursor-pointer flex items-center justify-center border border-white group hover:scale-110 hover:bg-primaryColor hover:border-primaryColor active:bg-primaryColor active:border-primaryColor transition-all duration-300 overflow-hidden"
+            >
+              <span
+                className="text-gray-200 font-semibold mr-20 transform group-hover:translate-x-72 transition-all duration-500">
+                  تطوع
+              </span>
+              <span
+                className="absolute text-gray-200 h-full w-10 rounded-lg flex items-center justify-center transform group-hover:scale-110  transition-all duration-300"
+              >
+                                        <MdOutlineVolunteerActivism size={25} />
+            
+              </span>
+            </Link>
           
 
           </div>

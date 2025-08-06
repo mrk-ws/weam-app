@@ -6,7 +6,8 @@ import Image from "next/image";
 const logos = [
   '/images/logo4.jpg',
   '/images/logo2.png',
-  '/images/logo3.svg'
+  '/images/logo3.svg',
+  '/images/logo4.png'
 ];
 
 const LogoSh = () => {
@@ -15,12 +16,12 @@ const LogoSh = () => {
       <div className="overflow-hidden py-6">
         <div className="relative flex whitespace-nowrap">
           <motion.div
-            className="flex space-x-8"
+            className="flex space-x-40"
             initial={{ x: 0 }}
             animate={{ x: '100%' }}
             transition={{
               repeat: Infinity,
-              duration: 10,
+              duration: 20,
               ease: 'linear',
             }}
           >
@@ -29,9 +30,9 @@ const LogoSh = () => {
                 key={index}
                 src={logo}
                 alt="logo"
-                width={100}
-                height={64}
-                className="h-16 w-auto"
+                width={200}
+                height={100}
+                className="h-20 w-auto"
               />
             ))}
           </motion.div>

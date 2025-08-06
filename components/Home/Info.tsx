@@ -49,12 +49,12 @@ const Info = () => {
                   </p>
                   <br />
                   <ul className="flex flex-wrap my-4 gap-4">
-                      <li className='p-2 bg-slate-100 dark:bg-darkTheme2 rounded-md cursor-pointer hover:bg-slate-200 transition-all hover:-translate-y-1 duration-200'> الإستدامة</li>
-                      <li className='p-2 bg-slate-100 dark:bg-darkTheme2 rounded-md cursor-pointer hover:bg-slate-200 transition-all hover:-translate-y-1 duration-200'> التمكين</li>
-                      <li className='p-2 bg-slate-100 dark:bg-darkTheme2 rounded-md cursor-pointer hover:bg-slate-200 transition-all hover:-translate-y-1 duration-200'> الابتكار</li>
-                      <li className='p-2 bg-slate-100 dark:bg-darkTheme2 rounded-md cursor-pointer hover:bg-slate-200 transition-all hover:-translate-y-1 duration-200'> الشمولية</li>
-                      <li className='p-2 bg-slate-100 dark:bg-darkTheme2 rounded-md cursor-pointer hover:bg-slate-200 transition-all hover:-translate-y-1 duration-200'> الشفافية</li>
-                      <li className='p-2 bg-slate-100 dark:bg-darkTheme2 rounded-md cursor-pointer hover:bg-slate-200 transition-all hover:-translate-y-1 duration-200'> المسؤلية</li>
+                      <li className='p-2 bg-slate-100 dark:bg-darkTheme2 rounded-md hover:bg-slate-200 transition-all hover:-translate-y-1 duration-200'> الإستدامة</li>
+                      <li className='p-2 bg-slate-100 dark:bg-darkTheme2 rounded-md hover:bg-slate-200 transition-all hover:-translate-y-1 duration-200'> التمكين</li>
+                      <li className='p-2 bg-slate-100 dark:bg-darkTheme2 rounded-md hover:bg-slate-200 transition-all hover:-translate-y-1 duration-200'> الابتكار</li>
+                      <li className='p-2 bg-slate-100 dark:bg-darkTheme2 rounded-md hover:bg-slate-200 transition-all hover:-translate-y-1 duration-200'> الشمولية</li>
+                      <li className='p-2 bg-slate-100 dark:bg-darkTheme2 rounded-md hover:bg-slate-200 transition-all hover:-translate-y-1 duration-200'> الشفافية</li>
+                      <li className='p-2 bg-slate-100 dark:bg-darkTheme2 rounded-md hover:bg-slate-200 transition-all hover:-translate-y-1 duration-200'> المسؤلية</li>
                   
                   </ul>
                 </ul>

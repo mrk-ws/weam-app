@@ -11,23 +11,30 @@ interface NewsItem {
 const newsData: NewsItem[] = [
   {
     id: 1,
-    title: "إطلاق برنامج جديد في الجمعية",
+    title: "إطلاق وتدشين برامج الجمعية",
     description: "أعلنت الجمعية عن إطلاق برنامجها الجديد الذي سيحدث ثورة في المجال التنموي...",
-    image: "/images/news.png",
+    image: "/images/news1.png",
     link: "#",
   },
   {
     id: 2,
-    title: "تحديثات جديدة على التطبيق",
-    description: "تحديث جديد يجلب ميزات مذهلة لتحسين تجربة المستخدم...",
-    image: "/images/news.png",
+    title: "اطلاق منصة جمع التبرعات المعتمدة",
+    description: "أطلقت الجمعية منصة لجمع التبرعات بشكل آمن وشفاف...",
+    image: "/images/news2.png",
     link: "#",
   },
   {
     id: 3,
-    title: "توسع الجمعية في المنطقة المحلية",
-    description: "خطط جديدة للتوسع في مناطق جديدة خلال العام المقبل...",
-    image: "/images/news.png",
+    title: "الحفل السنوي لتنمية وتمكين ايتام المملكة",
+    description: "شاركت الجمعية في محافظة حفر الباطن اللقاء السنوي  لجمعية تراؤوف...",
+    image: "/images/news3.jpg",
+    link: "#",
+  },
+  {
+    id: 4,
+    title: "تدشين منصة التطوع الوطني للجميعة",
+    description: "تم تدشين منصة التطوع الوطني التي تهدف إلى تعزيز المشاركة المجتمعية...",
+    image: "/images/logo4.png",
     link: "#",
   },
 ];
@@ -39,7 +46,7 @@ export default function NewsSection() {
         <h2 className="text-3xl font-bold text-center mb-8">
           آخر الأخبار
         </h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {newsData.map((news) => (
             <div key={news.id} className="overflow-hidden rounded-2xl shadow-lg bg-white">
               <Image
@@ -52,7 +59,7 @@ export default function NewsSection() {
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-gray-900">{news.title}</h3>
                 <p className="text-gray-600 mt-2">{news.description}</p>
-                <a href={news.link} className="mt-4 block text-center bg-primeryColor text-white py-2 rounded-md">
+                <a href={news.link} className="mt-4 block text-center bg-primaryColor text-white py-2 rounded-md">
                   اقرأ المزيد
                 </a>
               </div>

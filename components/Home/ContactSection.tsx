@@ -42,8 +42,8 @@ export default function ContactSection() {
               <a href="https://www.facebook.com/weam.org/" className="text-gray-200 text-xl hover:-translate-y-[5px] duration-200"><FaFacebook /></a>
               <a href="https://x.com/weam_org" className="text-gray-200 text-xl hover:-translate-y-[5px] duration-200"><FaSquareXTwitter /></a>
               <a href="https://www.instagram.com/weam_org" className="text-gray-200 text-xl hover:-translate-y-[5px] duration-200"><FaInstagram /></a>
-              <a href="#" className="hover:-translate-y-[2px] duration-200">
-                <Image width={18} height={18} src="/images/jaco-sv1.svg" alt="fg" />
+              <a href="#" className="hover:-translate-y-[5px] duration-200">
+                <Image width={18} height={18} src="/images/jaco.svg" alt="jaco" />
               </a>
               <a href="https://wa.me/+966507766675" className="text-gray-200 text-xl hover:-translate-y-[5px] duration-200"><FaWhatsapp /></a>
               <a href="https://www.tiktok.com/@weam_org" className="text-gray-200 text-xl hover:-translate-y-[5px] duration-200"><FaTiktok /></a>
