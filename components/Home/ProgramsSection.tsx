@@ -52,7 +52,7 @@ const programs = [
     link: "/programs/program5",
   },
   {
-    image: "/images/slide1.jpg",
+    image: "/images/p12.jpg",
     badge: "الحج والعمرة",
     title:
       "تمكين الأيتام المكلفين من اداء فريضة الحج والعمرة بالشراكة مع جهات ذات العلاقة",
